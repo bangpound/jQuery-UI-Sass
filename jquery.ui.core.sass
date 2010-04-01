@@ -3,6 +3,9 @@
   Copyright (c) 2010 AUTHORS.txt (http://jqueryui.com/about)
   Dual licensed under the MIT (MIT-LICENSE.txt) and GPL (GPL-LICENSE.txt) licenses. */
 
+@import compass/utilities/general/reset.sass
+@import compass/utilities/general/clearfix.sass
+
 /*
   Layout helpers */
 
@@ -16,36 +19,21 @@
 
 
 .ui-helper-reset
-  margin: 0
-  padding: 0
-  border: 0
-  outline: 0
+  +reset-box-model
   line-height: 1.3
   text-decoration: none
   font-size: 100%
-  list-style: none
+  +reset-list-style
 
 
 .ui-helper-clearfix
-  display: inline-block
-
-  &:after
-    content: "."
-    display: block
-    height: 0
-    clear: both
-    visibility: hidden
-
-/* required comment for clearfix to work in Opera \*/
-* html .ui-helper-clearfix
-  height: 1%
-
-
-.ui-helper-clearfix
-  display: block
-
-
+  +pie-clearfix
+  /* required comment for clearfix to work in Opera \*/
+  * html &
+    height: 1%
 /* end clearfix */
+
+
 .ui-helper-zfix
   width: 100%
   height: 100%
