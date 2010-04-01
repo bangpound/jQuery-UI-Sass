@@ -4,136 +4,104 @@
   Dual licensed under the MIT (MIT-LICENSE.txt) and GPL (GPL-LICENSE.txt) licenses.
   To view and modify this theme, visit http://jqueryui.com/themeroller/ */
 
+@import _jquery-ui.sass
+@import compass/css3.sass
+
 /*
   Component containers */
 
 .ui-widget
-  /*{ffDefault}*/
-  font-family: Verdana,Arial,sans-serif
-  /*{fsDefault}*/
-  font-size: 1.1em
+  font-family = !jquery_ui_font_family_default
+  font-size = !jquery_ui_font_size_default
 
   .ui-widget
     font-size: 1em
 
   input, select, textarea, button
-    /*{ffDefault}*/
-    font-family: Verdana,Arial,sans-serif
+    font-family = !jquery_ui_font_family_default
     font-size: 1em
 
 
 .ui-widget-content
-  /*{borderColorContent}*/
-  border: 1px solid #aaaaaa
-  /*{bgColorContent}*/
-  /*{bgImgUrlContent}*/
-  /*{bgContentXPos}*/
-  /*{bgContentYPos}*/
-  /*{bgContentRepeat}*/
-  background: #ffffff url(images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x
-  /*{fcContent}*/
-  color: #222222
+  border:
+    width: 1px
+    style: solid
+    color = !jquery_ui_border_color_content
+  background: !jquery_ui_bg_color_content url(!jquery_ui_bg_img_url_content) !jquery_ui_bg_content_xpos !jquery_ui_bg_content_ypos !jquery_ui_bg_content_repeat
+  color = !jquery_ui_color_content
 
   a
-    /*{fcContent}*/
-    color: #222222
+    color = !jquery_ui_color_content
 
 
 .ui-widget-header
-  /*{borderColorHeader}*/
-  border: 1px solid #aaaaaa
-  /*{bgColorHeader}*/
-  /*{bgImgUrlHeader}*/
-  /*{bgHeaderXPos}*/
-  /*{bgHeaderYPos}*/
-  /*{bgHeaderRepeat}*/
-  background: #cccccc url(images/ui-bg_highlight-soft_75_cccccc_1x100.png) 50% 50% repeat-x
-  /*{fcHeader}*/
-  color: #222222
+  border:
+    width: 1px
+    style: solid
+    color = !jquery_ui_border_color_header
+  background: !jquery_ui_bg_color_header url(!jquery_ui_bg_img_url_header) !jquery_ui_bg_header_xpos !jquery_ui_bg_header_ypos !jquery_ui_bg_header_repeat
+  color = !jquery_ui_color_header
   font-weight: bold
 
   a
-    /*{fcHeader}*/
-    color: #222222
+    color = !jquery_ui_color_header
 
 /*
   Interaction states */
 
 .ui-state-default, .ui-widget-content .ui-state-default
-  /*{borderColorDefault}*/
-  border: 1px solid #d3d3d3
-  /*{bgColorDefault}*/
-  /*{bgImgUrlDefault}*/
-  /*{bgDefaultXPos}*/
-  /*{bgDefaultYPos}*/
-  /*{bgDefaultRepeat}*/
-  background: #e6e6e6 url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x
-  /*{fwDefault}*/
-  font-weight: normal
-  /*{fcDefault}*/
-  color: #555555
+  border:
+    width: 1px
+    style: solid
+    color = !jquery_ui_border_color_default
+  background: !jquery_ui_bg_color_default url(!jquery_ui_bg_img_url_default) !jquery_ui_bg_default_xpos !jquery_ui_bg_default_ypos !jquery_ui_bg_default_repeat
+  font-weight = !jquery_ui_font_weight_default
+  color = !jquery_ui_color_default
 
 
 .ui-state-default a
-  /*{fcDefault}*/
-  color: #555555
+  color = !jquery_ui_color_default
   text-decoration: none
 
   &:link, &:visited
-    /*{fcDefault}*/
-    color: #555555
+    color = !jquery_ui_color_default
     text-decoration: none
 
 
 .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus
-  /*{borderColorHover}*/
-  border: 1px solid #999999
-  /*{bgColorHover}*/
-  /*{bgImgUrlHover}*/
-  /*{bgHoverXPos}*/
-  /*{bgHoverYPos}*/
-  /*{bgHoverRepeat}*/
-  background: #dadada url(images/ui-bg_glass_75_dadada_1x400.png) 50% 50% repeat-x
-  /*{fwDefault}*/
-  font-weight: normal
-  /*{fcHover}*/
-  color: #212121
-
+  border:
+    width: 1px
+    style: solid
+    color = !jquery_ui_border_color_hover
+  background: !jquery_ui_bg_color_hover url(!jquery_ui_bg_img_url_hover) !jquery_ui_bg_hover_xpos !jquery_ui_bg_hover_ypos !jquery_ui_bg_hover_repeat
+  font-weight = !jquery_ui_font_weight_default
+  color = !jquery_ui_color_hover
 
 .ui-state-hover a
-  /*{fcHover}*/
-  color: #212121
+  color = !jquery_ui_color_hover
   text-decoration: none
 
   &:hover
-    /*{fcHover}*/
-    color: #212121
+    color = !jquery_ui_color_hover
     text-decoration: none
 
 
 .ui-state-active, .ui-widget-content .ui-state-active
-  /*{borderColorActive}*/
-  border: 1px solid #aaaaaa
-  /*{bgColorActive}*/
-  /*{bgImgUrlActive}*/
-  /*{bgActiveXPos}*/
-  /*{bgActiveYPos}*/
-  /*{bgActiveRepeat}*/
-  background: #ffffff url(images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x
-  /*{fwDefault}*/
-  font-weight: normal
-  /*{fcActive}*/
-  color: #212121
+  border:
+    width: 1px
+    style: solid
+    color = !jquery_ui_border_color_active
+  background: !jquery_ui_bg_color_active url(!jquery_ui_bg_img_url_active) !jquery_ui_bg_active_xpos !jquery_ui_bg_active_ypos !jquery_ui_bg_active_repeat
+  font-weight = !jquery_ui_font_weight_default
+  color = !jquery_ui_color_active
 
 
 .ui-state-active a
-  /*{fcActive}*/
-  color: #212121
+  color = !jquery_ui_color_active
   text-decoration: none
 
   &:link, &:visited
-    /*{fcActive}*/
-    color: #212121
+    color = !jquery_ui_color_active
     text-decoration: none
 
 
@@ -145,39 +113,29 @@
   Interaction Cues */
 
 .ui-state-highlight, .ui-widget-content .ui-state-highlight
-  /*{borderColorHighlight}*/
-  border: 1px solid #fcefa1
-  /*{bgColorHighlight}*/
-  /*{bgImgUrlHighlight}*/
-  /*{bgHighlightXPos}*/
-  /*{bgHighlightYPos}*/
-  /*{bgHighlightRepeat}*/
-  background: #fbf9ee url(images/ui-bg_glass_55_fbf9ee_1x400.png) 50% 50% repeat-x
-  /*{fcHighlight}*/
-  color: #363636
+  border:
+    width: 1px
+    style: solid
+    color = !jquery_ui_border_color_highlight
+  background: !jquery_ui_bg_color_highlight url(!jquery_ui_bg_img_url_highlight) !jquery_ui_bg_highlight_xpos !jquery_ui_bg_highlight_ypos !jquery_ui_bg_highlight_repeat
+  color = !jquery_ui_color_highlight
 
 
 .ui-state-highlight a, .ui-widget-content .ui-state-highlight a
-  /*{fcHighlight}*/
-  color: #363636
+  color = !jquery_ui_color_highlight
 
 
 .ui-state-error, .ui-widget-content .ui-state-error
-  /*{borderColorError}*/
-  border: 1px solid #cd0a0a
-  /*{bgColorError}*/
-  /*{bgImgUrlError}*/
-  /*{bgErrorXPos}*/
-  /*{bgErrorYPos}*/
-  /*{bgErrorRepeat}*/
-  background: #fef1ec url(images/ui-bg_glass_95_fef1ec_1x400.png) 50% 50% repeat-x
-  /*{fcError}*/
-  color: #cd0a0a
+  border:
+    width: 1px
+    style: solid
+    color = !jquery_ui_border_color_error
+  background: !jquery_ui_bg_color_error url(!jquery_ui_bg_img_url_error) !jquery_ui_bg_error_xpos !jquery_ui_bg_error_ypos !jquery_ui_bg_error_repeat
+  color = !jquery_ui_color_error
 
 
 .ui-state-error a, .ui-widget-content .ui-state-error a, .ui-state-error-text, .ui-widget-content .ui-state-error-text
-  /*{fcError}*/
-  color: #cd0a0a
+  color = !jquery_ui_color_error
 
 
 .ui-priority-primary, .ui-widget-content .ui-priority-primary
@@ -203,40 +161,30 @@
 .ui-icon
   width: 16px
   height: 16px
-  /*{iconsContent}*/
-  background-image: url(images/ui-icons_222222_256x240.png)
-
+  background-image = url(!jquery_ui_icons_content)
 
 .ui-widget-content .ui-icon
-  /*{iconsContent}*/
-  background-image: url(images/ui-icons_222222_256x240.png)
+  background-image = url(!jquery_ui_icons_content)
 
 .ui-widget-header .ui-icon
-  /*{iconsHeader}*/
-  background-image: url(images/ui-icons_222222_256x240.png)
+  background-image = url(!jquery_ui_icons_header)
+
 
 .ui-state-default .ui-icon
-  /*{iconsDefault}*/
-  background-image: url(images/ui-icons_888888_256x240.png)
-
+  background-image = url(!jquery_ui_icons_default)
 
 .ui-state-hover .ui-icon, .ui-state-focus .ui-icon
-  /*{iconsHover}*/
-  background-image: url(images/ui-icons_454545_256x240.png)
+  background-image = url(!jquery_ui_icons_hover)
 
 .ui-state-active .ui-icon
-  /*{iconsActive}*/
-  background-image: url(images/ui-icons_454545_256x240.png)
+  background-image = url(!jquery_ui_icons_active)
 
 
 .ui-state-highlight .ui-icon
-  /*{iconsHighlight}*/
-  background-image: url(images/ui-icons_2e83ff_256x240.png)
-
+  background-image = url(!jquery_ui_icons_highlight)
 
 .ui-state-error .ui-icon, .ui-state-error-text .ui-icon
-  /*{iconsError}*/
-  background-image: url(images/ui-icons_cd0a0a_256x240.png)
+  background-image = url(!jquery_ui_icons_error)
 
 
 /* positioning */
@@ -938,140 +886,61 @@
 /* Corner radius */
 .ui-corner-tl
   /*{cornerRadius}*/
-  -moz-border-radius-topleft: 4px
-  /*{cornerRadius}*/
-  -webkit-border-top-left-radius: 4px
-  /*{cornerRadius}*/
-  border-top-left-radius: 4px
-
+  +border-top-left-radius(!jquery_ui_corner_radius)
 
 .ui-corner-tr
   /*{cornerRadius}*/
-  -moz-border-radius-topright: 4px
-  /*{cornerRadius}*/
-  -webkit-border-top-right-radius: 4px
-  /*{cornerRadius}*/
-  border-top-right-radius: 4px
-
+  +border-top-right-radius(!jquery_ui_corner_radius)
 
 .ui-corner-bl
   /*{cornerRadius}*/
-  -moz-border-radius-bottomleft: 4px
-  /*{cornerRadius}*/
-  -webkit-border-bottom-left-radius: 4px
-  /*{cornerRadius}*/
-  border-bottom-left-radius: 4px
-
+  +border-bottom-left-radius(!jquery_ui_corner_radius)
 
 .ui-corner-br
   /*{cornerRadius}*/
-  -moz-border-radius-bottomright: 4px
-  /*{cornerRadius}*/
-  -webkit-border-bottom-right-radius: 4px
-  /*{cornerRadius}*/
-  border-bottom-right-radius: 4px
-
+  +border-bottom-right-radius(!jquery_ui_corner_radius)
 
 .ui-corner-top
   /*{cornerRadius}*/
-  -moz-border-radius-topleft: 4px
-  /*{cornerRadius}*/
-  -webkit-border-top-left-radius: 4px
-  /*{cornerRadius}*/
-  border-top-left-radius: 4px
-  /*{cornerRadius}*/
-  -moz-border-radius-topright: 4px
-  /*{cornerRadius}*/
-  -webkit-border-top-right-radius: 4px
-  /*{cornerRadius}*/
-  border-top-right-radius: 4px
-
+  +border-top-radius(!jquery_ui_corner_radius)
 
 .ui-corner-bottom
   /*{cornerRadius}*/
-  -moz-border-radius-bottomleft: 4px
-  /*{cornerRadius}*/
-  -webkit-border-bottom-left-radius: 4px
-  /*{cornerRadius}*/
-  border-bottom-left-radius: 4px
-  /*{cornerRadius}*/
-  -moz-border-radius-bottomright: 4px
-  /*{cornerRadius}*/
-  -webkit-border-bottom-right-radius: 4px
-  /*{cornerRadius}*/
-  border-bottom-right-radius: 4px
-
+  +border-bottom-radius(!jquery_ui_corner_radius)
 
 .ui-corner-right
   /*{cornerRadius}*/
-  -moz-border-radius-topright: 4px
-  /*{cornerRadius}*/
-  -webkit-border-top-right-radius: 4px
-  /*{cornerRadius}*/
-  border-top-right-radius: 4px
-  /*{cornerRadius}*/
-  -moz-border-radius-bottomright: 4px
-  /*{cornerRadius}*/
-  -webkit-border-bottom-right-radius: 4px
-  /*{cornerRadius}*/
-  border-bottom-right-radius: 4px
-
+  +border-top-left-radius(!jquery_ui_corner_radius)
 
 .ui-corner-left
   /*{cornerRadius}*/
-  -moz-border-radius-topleft: 4px
-  /*{cornerRadius}*/
-  -webkit-border-top-left-radius: 4px
-  /*{cornerRadius}*/
-  border-top-left-radius: 4px
-  /*{cornerRadius}*/
-  -moz-border-radius-bottomleft: 4px
-  /*{cornerRadius}*/
-  -webkit-border-bottom-left-radius: 4px
-  /*{cornerRadius}*/
-  border-bottom-left-radius: 4px
-
+  +border-left-radius(!jquery_ui_corner_radius)
 
 .ui-corner-all
   /*{cornerRadius}*/
-  -moz-border-radius: 4px
-  /*{cornerRadius}*/
-  -webkit-border-radius: 4px
-  /*{cornerRadius}*/
-  border-radius: 4px
+  +border-radius(!jquery_ui_corner_radius)
 
 
 /* Overlays */
 .ui-widget-overlay
-  /*{bgColorOverlay}*/
-  /*{bgImgUrlOverlay}*/
-  /*{bgOverlayXPos}*/
-  /*{bgOverlayYPos}*/
-  /*{bgOverlayRepeat}*/
-  background: #aaaaaa url(images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x
-  opacity: .3
-  /*{opacityOverlay}*/
-  filter: Alpha(Opacity=30)
+  background = !jquery_ui_bg_color_overlay url(!jquery_ui_bg_img_url_overlay) !jquery_ui_bg_overlay_xpos !jquery_ui_bg_overlay_ypos !jquery_ui_bg_overlay_repeat
+  opacity = !jquery_ui_opacity_overlay
+  filter = "Alpha(Opacity=" + !jquery_ui_opacity_overlay * 10 + ")"
 
 
 .ui-widget-shadow
-  /*{offsetTopShadow}*/
-  /*{offsetLeftShadow}*/
-  margin: -8px 0 0 -8px
-  /*{thicknessShadow}*/
-  padding: 8px
+  margin:
+    top = !jquery_ui_offset_top_shadow
+    right: 0
+    bottom: 0
+    left = !jquery_ui_offset_left_shadow
+  padding = !jquery_ui_thickness_shadow
   /*{bgColorShadow}*/
   /*{bgImgUrlShadow}*/
   /*{bgShadowXPos}*/
   /*{bgShadowYPos}*/
   /*{bgShadowRepeat}*/
-  background: #aaaaaa url(images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x
-  opacity: .3
-  /*{opacityShadow}*/
-  filter: Alpha(Opacity=30)
-  /*{cornerRadiusShadow}*/
-  -moz-border-radius: 8px
-  /*{cornerRadiusShadow}*/
-  -webkit-border-radius: 8px
-  /*{cornerRadiusShadow}*/
-  border-radius: 8px
+  background = !jquery_ui_bg_color_shadow url(!jquery_ui_bg_img_url_shadow) !jquery_ui_bg_shadow_xpos !jquery_ui_bg_shadow_ypos !jquery_ui_bg_shadow_repeat
+  opacity = !jquery_ui_opacity_shadow
+  filter = "Alpha(Opacity=" + !jquery_ui_opacity_shadow * 10 + ")"
+  +border-radius(!jquery_ui_corner_radius_shadow)
