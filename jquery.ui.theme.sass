@@ -925,7 +925,7 @@
 .ui-widget-overlay
   background = !jquery_ui_bg_color_overlay url(!jquery_ui_bg_img_url_overlay) !jquery_ui_bg_overlay_xpos !jquery_ui_bg_overlay_ypos !jquery_ui_bg_overlay_repeat
   opacity = !jquery_ui_opacity_overlay
-  filter = "Alpha(Opacity=" + !jquery_ui_opacity_overlay * 10 + ")"
+  filter = "Alpha(Opacity=" + !jquery_ui_opacity_overlay * 100 + ")"
 
 
 .ui-widget-shadow
@@ -942,5 +942,5 @@
   /*{bgShadowRepeat}*/
   background = !jquery_ui_bg_color_shadow url(!jquery_ui_bg_img_url_shadow) !jquery_ui_bg_shadow_xpos !jquery_ui_bg_shadow_ypos !jquery_ui_bg_shadow_repeat
   opacity = !jquery_ui_opacity_shadow
-  filter = "Alpha(Opacity=" + !jquery_ui_opacity_shadow * 10 + ")"
+  filter = "Alpha(Opacity=" + !jquery_ui_opacity_shadow * 100 + ")"
   +border-radius(!jquery_ui_corner_radius_shadow)
