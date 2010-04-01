@@ -163,28 +163,24 @@
   height: 16px
   background-image = url(!jquery_ui_icons_content)
 
-.ui-widget-content .ui-icon
-  background-image = url(!jquery_ui_icons_content)
+  .ui-widget-content &
+    background-image = url(!jquery_ui_icons_content)
+  .ui-widget-header &
+    background-image = url(!jquery_ui_icons_header)
 
-.ui-widget-header .ui-icon
-  background-image = url(!jquery_ui_icons_header)
+  .ui-state-default &
+    background-image = url(!jquery_ui_icons_default)
+  .ui-state-hover &,
+  .ui-state-focus &
+    background-image = url(!jquery_ui_icons_hover)
+  .ui-state-active &
+    background-image = url(!jquery_ui_icons_active)
 
-
-.ui-state-default .ui-icon
-  background-image = url(!jquery_ui_icons_default)
-
-.ui-state-hover .ui-icon, .ui-state-focus .ui-icon
-  background-image = url(!jquery_ui_icons_hover)
-
-.ui-state-active .ui-icon
-  background-image = url(!jquery_ui_icons_active)
-
-
-.ui-state-highlight .ui-icon
-  background-image = url(!jquery_ui_icons_highlight)
-
-.ui-state-error .ui-icon, .ui-state-error-text .ui-icon
-  background-image = url(!jquery_ui_icons_error)
+  .ui-state-highlight &
+    background-image = url(!jquery_ui_icons_highlight)
+  .ui-state-error &,
+  .ui-state-error-text &
+    background-image = url(!jquery_ui_icons_error)
 
 
 /* positioning */
