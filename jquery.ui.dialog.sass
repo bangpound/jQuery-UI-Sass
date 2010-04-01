@@ -1,6 +1,8 @@
 /*
   Dialog */
 
+@import compass/utilities/general/float.sass
+
 .ui-dialog
   position: absolute
   padding: .2em
@@ -12,7 +14,7 @@
     position: relative
 
   .ui-dialog-title
-    float: left
+    +float-left
     margin: .1em 16px .2em 0
 
   .ui-dialog-titlebar-close
@@ -46,7 +48,7 @@
     padding: .3em 1em .5em .4em
 
     button
-      float: right
+      +float-right
       margin: .5em .4em .5em 0
       cursor: pointer
       padding: .2em .6em .3em .6em

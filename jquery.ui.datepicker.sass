@@ -1,6 +1,8 @@
 /*
   Datepicker */
 
+@import compass/utilities/general/float.sass
+
 .ui-datepicker
   width: 17em
   padding: .2em .2em 0
@@ -85,7 +87,7 @@
     border-bottom: 0
 
     button
-      float: right
+      +float-right
       margin: .5em .2em .4em
       cursor: pointer
       padding: .2em .6em .3em .6em
@@ -93,7 +95,7 @@
       overflow: visible
 
       &.ui-datepicker-current
-        float: left
+        +float-left
 
 /* with multiple calendars */
 
@@ -102,7 +104,7 @@
 
 
 .ui-datepicker-multi .ui-datepicker-group
-  float: left
+  +float-left
 
   table
     width: 95%
@@ -158,13 +160,13 @@
     clear: right
 
     button
-      float: left
+      +float-left
 
       &.ui-datepicker-current
-        float: right
+        +float-right
 
   .ui-datepicker-group
-    float: right
+    +float-right
 
   .ui-datepicker-group-last .ui-datepicker-header, .ui-datepicker-group-middle .ui-datepicker-header
     border-right-width: 0
