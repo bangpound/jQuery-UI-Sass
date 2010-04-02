@@ -3,26 +3,69 @@
 
 @import compass/utilities/general/float.sass
 
-.ui-dialog
+=ui-dialog-direction(!first = "left")
+  !last = "right"
+  @if !first == "right"
+    !last = "left"
+
+  .ui-dialog-titlebar
+    padding:
+      #{!last}: 1em
+      #{!first}: 1em
+
+  .ui-dialog-title
+    +float(!first)
+    margin:
+      #{!last}: 16px
+      #{!first}: 0
+
+  .ui-dialog-titlebar-close
+    #{!last}: .3em
+
+  .ui-dialog-content
+    padding:
+      #{!first}: 1em
+      #{!last}: 1em
+
+  .ui-dialog-buttonpane
+    text-align = !first
+    padding:
+      #{!last}: 1em
+      #{!first}: .4em
+
+    button
+      +float(!last)
+      margin:
+        #{!last}: .4em
+        #{!first}: 0
+      padding:
+        #{!last}: .6em
+        #{!first}: .6em
+
+=ui-dialog
+  +ui-dialog-direction
   position: absolute
   padding: .2em
   width: 300px
   overflow: hidden
 
   .ui-dialog-titlebar
-    padding: .5em 1em .3em
+    padding:
+      top: .5em
+      bottom: .3em
     position: relative
 
   .ui-dialog-title
-    +float-left
-    margin: .1em 16px .2em 0
+    margin:
+      top: .1em
+      bottom: .2em
 
   .ui-dialog-titlebar-close
     position: absolute
-    right: .3em
     top: 50%
     width: 19px
-    margin: -10px 0 0 0
+    margin:
+      top: -10px
     padding: 1px
     height: 18px
 
@@ -35,23 +78,30 @@
 
   .ui-dialog-content
     border: 0
-    padding: .5em 1em
+    padding:
+      top: .5em
+      bottom: .5em
     background: none
     overflow: auto
     zoom: 1
 
   .ui-dialog-buttonpane
-    text-align: left
     border-width: 1px 0 0 0
     background-image: none
-    margin: .5em 0 0 0
-    padding: .3em 1em .5em .4em
+    margin:
+      top: .5em
+    padding:
+      top: .3em
+      bottom: .5em
 
     button
-      +float-right
-      margin: .5em .4em .5em 0
+      margin:
+        top: .5em
+        bottom: .5em
       cursor: pointer
-      padding: .2em .6em .3em .6em
+      padding:
+        top: .2em
+        bottom: .3em
       line-height: 1.4em
       width: auto
       overflow: visible
@@ -65,3 +115,6 @@
 
 .ui-draggable .ui-dialog-titlebar
   cursor: move
+
+.ui-dialog
+  +ui-dialog
