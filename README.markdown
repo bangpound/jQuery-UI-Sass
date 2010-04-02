@@ -17,5 +17,5 @@ Goals
 -----
 
 1. <strike>Make Themeroller unnecessary.</strike> **done**
-2. All widget styles are mixins.
+2. All widget styles are mixins. *partial*
 3. Support RTL widgets.
