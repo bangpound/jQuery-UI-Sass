@@ -28,7 +28,7 @@
     width: 1px
     style: solid
     color = !jquery_ui_border_color_content
-  background = !jquery_ui_bg_color_content url(!jquery_ui_bg_img_url_content) !jquery_ui_bg_content_xpos !jquery_ui_bg_content_ypos !jquery_ui_bg_content_repeat
+  background = !jquery_ui_bg_color_content image_url(!jquery_ui_bg_img_url_content) !jquery_ui_bg_content_xpos !jquery_ui_bg_content_ypos !jquery_ui_bg_content_repeat
   color = !jquery_ui_color_content
 
   a
@@ -40,7 +40,7 @@
     width: 1px
     style: solid
     color = !jquery_ui_border_color_header
-  background = !jquery_ui_bg_color_header url(!jquery_ui_bg_img_url_header) !jquery_ui_bg_header_xpos !jquery_ui_bg_header_ypos !jquery_ui_bg_header_repeat
+  background = !jquery_ui_bg_color_header image_url(!jquery_ui_bg_img_url_header) !jquery_ui_bg_header_xpos !jquery_ui_bg_header_ypos !jquery_ui_bg_header_repeat
   color = !jquery_ui_color_header
   font-weight: bold
 
@@ -55,7 +55,7 @@
     width: 1px
     style: solid
     color = !jquery_ui_border_color_default
-  background = !jquery_ui_bg_color_default url(!jquery_ui_bg_img_url_default) !jquery_ui_bg_default_xpos !jquery_ui_bg_default_ypos !jquery_ui_bg_default_repeat
+  background = !jquery_ui_bg_color_default image_url(!jquery_ui_bg_img_url_default) !jquery_ui_bg_default_xpos !jquery_ui_bg_default_ypos !jquery_ui_bg_default_repeat
   font-weight = !jquery_ui_font_weight_default
   color = !jquery_ui_color_default
 
@@ -74,7 +74,7 @@
     width: 1px
     style: solid
     color = !jquery_ui_border_color_hover
-  background = !jquery_ui_bg_color_hover url(!jquery_ui_bg_img_url_hover) !jquery_ui_bg_hover_xpos !jquery_ui_bg_hover_ypos !jquery_ui_bg_hover_repeat
+  background = !jquery_ui_bg_color_hover image_url(!jquery_ui_bg_img_url_hover) !jquery_ui_bg_hover_xpos !jquery_ui_bg_hover_ypos !jquery_ui_bg_hover_repeat
   font-weight = !jquery_ui_font_weight_default
   color = !jquery_ui_color_hover
 
@@ -92,7 +92,7 @@
     width: 1px
     style: solid
     color = !jquery_ui_border_color_active
-  background = !jquery_ui_bg_color_active url(!jquery_ui_bg_img_url_active) !jquery_ui_bg_active_xpos !jquery_ui_bg_active_ypos !jquery_ui_bg_active_repeat
+  background = !jquery_ui_bg_color_active image_url(!jquery_ui_bg_img_url_active) !jquery_ui_bg_active_xpos !jquery_ui_bg_active_ypos !jquery_ui_bg_active_repeat
   font-weight = !jquery_ui_font_weight_default
   color = !jquery_ui_color_active
 
@@ -118,7 +118,7 @@
     width: 1px
     style: solid
     color = !jquery_ui_border_color_highlight
-  background = !jquery_ui_bg_color_highlight url(!jquery_ui_bg_img_url_highlight) !jquery_ui_bg_highlight_xpos !jquery_ui_bg_highlight_ypos !jquery_ui_bg_highlight_repeat
+  background = !jquery_ui_bg_color_highlight image_url(!jquery_ui_bg_img_url_highlight) !jquery_ui_bg_highlight_xpos !jquery_ui_bg_highlight_ypos !jquery_ui_bg_highlight_repeat
   color = !jquery_ui_color_highlight
 
 
@@ -131,7 +131,7 @@
     width: 1px
     style: solid
     color = !jquery_ui_border_color_error
-  background = !jquery_ui_bg_color_error url(!jquery_ui_bg_img_url_error) !jquery_ui_bg_error_xpos !jquery_ui_bg_error_ypos !jquery_ui_bg_error_repeat
+  background = !jquery_ui_bg_color_error image_url(!jquery_ui_bg_img_url_error) !jquery_ui_bg_error_xpos !jquery_ui_bg_error_ypos !jquery_ui_bg_error_repeat
   color = !jquery_ui_color_error
 
 
@@ -737,7 +737,7 @@
 
 /* Overlays */
 .ui-widget-overlay
-  background = !jquery_ui_bg_color_overlay url(!jquery_ui_bg_img_url_overlay) !jquery_ui_bg_overlay_xpos !jquery_ui_bg_overlay_ypos !jquery_ui_bg_overlay_repeat
+  background = !jquery_ui_bg_color_overlay image_url(!jquery_ui_bg_img_url_overlay) !jquery_ui_bg_overlay_xpos !jquery_ui_bg_overlay_ypos !jquery_ui_bg_overlay_repeat
   opacity = !jquery_ui_opacity_overlay
   filter = "Alpha(Opacity=" + !jquery_ui_opacity_overlay * 100 + ")"
 
@@ -749,7 +749,7 @@
     bottom: 0
     left = !jquery_ui_offset_left_shadow
   padding = !jquery_ui_thickness_shadow
-  background = !jquery_ui_bg_color_shadow url(!jquery_ui_bg_img_url_shadow) !jquery_ui_bg_shadow_xpos !jquery_ui_bg_shadow_ypos !jquery_ui_bg_shadow_repeat
+  background = !jquery_ui_bg_color_shadow image_url(!jquery_ui_bg_img_url_shadow) !jquery_ui_bg_shadow_xpos !jquery_ui_bg_shadow_ypos !jquery_ui_bg_shadow_repeat
   opacity = !jquery_ui_opacity_shadow
   filter = "Alpha(Opacity=" + !jquery_ui_opacity_shadow * 100 + ")"
   +border-radius(!jquery_ui_corner_radius_shadow)
