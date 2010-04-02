@@ -160,28 +160,26 @@
 
 /* states and images */
 .ui-icon
-  width: 16px
-  height: 16px
-  background-image = url(!jquery_ui_icons_content)
+  +sprite-background(!jquery_ui_icons_content)
 
   .ui-widget-content &
-    background-image = url(!jquery_ui_icons_content)
+    background-image = image_url(!jquery_ui_icons_content) "no-repeat"
   .ui-widget-header &
-    background-image = url(!jquery_ui_icons_header)
+    background-image = image_url(!jquery_ui_icons_header) "no-repeat"
 
   .ui-state-default &
-    background-image = url(!jquery_ui_icons_default)
+    background-image = image_url(!jquery_ui_icons_default) "no-repeat"
   .ui-state-hover &,
   .ui-state-focus &
-    background-image = url(!jquery_ui_icons_hover)
+    background-image = image_url(!jquery_ui_icons_hover) "no-repeat"
   .ui-state-active &
-    background-image = url(!jquery_ui_icons_active)
+    background-image = image_url(!jquery_ui_icons_active) "no-repeat"
 
   .ui-state-highlight &
-    background-image = url(!jquery_ui_icons_highlight)
+    background-image = image_url(!jquery_ui_icons_highlight) "no-repeat"
   .ui-state-error &,
   .ui-state-error-text &
-    background-image = url(!jquery_ui_icons_error)
+    background-image = image_url(!jquery_ui_icons_error) "no-repeat"
 
 
 /* positioning */
